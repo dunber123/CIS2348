@@ -12,7 +12,7 @@ while(low<high):
         low+=1
     elif(str1[high]==' '):
         high-=1
-    elif(str1[low]!=s[high]):
+    elif(str1[low]!=str1[high]):
         result = False
         break
     else:
