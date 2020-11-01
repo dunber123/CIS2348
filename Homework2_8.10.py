@@ -2,23 +2,23 @@
 #CIS 2348
 #1818962
 
-s = input()
-c = s.replace(' ', '')
+str1 = input()
+cha1 = str1.replace(' ', '')
 low = 0
 high = len(s)-1
 result = True
 while(low<high):
-    if(s[low]==' '):
+    if(str1[low]==' '):
         low+=1
-    elif(s[high]==' '):
+    elif(str1[high]==' '):
         high-=1
-    elif(s[low]!=s[high]):
+    elif(str1[low]!=s[high]):
         result = False
         break
     else:
         low+=1
         high-=1
 if (result):
-    print(s,"is a palindrome")
+    print(str1,"is a palindrome")
 else:
-    print(s, "is not a palindrome")
+    print(str1, "is not a palindrome")
